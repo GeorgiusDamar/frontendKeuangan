@@ -1,0 +1,37 @@
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%; /* Sidebar akan mengambil 100% lebar layar */
+        position: relative; /* Sidebar menjadi relatif agar bisa berpindah dengan konten */
+        height: auto; /* Menyesuaikan tinggi sidebar */
+    }
+
+    .main {
+        margin-left: 0; /* Konten utama akan mengisi ruang penuh tanpa sidebar */
+    }
+}
+
+/* Responsif untuk layar besar */
+.main {
+    margin-left: 250px; /* Memberikan ruang antara sidebar dan main content */
+    padding: 20px;
+}
+
+.sidebar {
+    background-color: #343a40;
+    color: white;
+    padding: 20px;
+    width: 250px; /* Lebar sidebar di layar besar */
+    height: 100vh; /* Membuat sidebar memiliki tinggi penuh */
+    position: fixed; /* Sidebar tetap berada di posisi tetap */
+}
+
+.content-card {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.nav-link {
+    padding: 10px;
+}
